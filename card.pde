@@ -23,7 +23,7 @@ void setup() {
   if (window.innerWidth > 868 || window.innerHeight > 620) {
     size(868,620, P2D);
   } else {
-    size(window.innerWidth - 30, window.innerHeight - 30, P2D);
+    size(window.innerWidth - 15, window.innerHeight - 15, P2D);
 	mobile = true;
   }
   
@@ -42,7 +42,7 @@ void setup() {
 
 void draw() {
   if (mobile) {
-    bg.resize(window.innerWidth, window.innerHeight);
+    bg.resize(window.innerWidth - 15, window.innerHeight - 15);
 	agentImage.resize(24, 24);
   }
   background(bg);

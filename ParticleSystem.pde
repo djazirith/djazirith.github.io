@@ -1,8 +1,6 @@
 class ParticleSystem {
   ArrayList<Particle> particles;
 
-  PShape particleShape;
-
   ParticleSystem(int n) {
     particles = new ArrayList<Particle>();
 
@@ -29,7 +27,7 @@ class ParticleSystem {
   void display() {
     for (Particle p : particles) {
       if (!p.isDead()) {
-	p.display();
+		p.display();
       }
     }
   }

@@ -51,11 +51,8 @@ class Particle {
   }
   
   void display() {
-    pushMatrix();
-    noStroke();
     tint(color(228,0,124,lifespan*lifespan));
     image(particleSprite, px, py, partSize, partSize);
     noTint();
-    popMatrix();
   }
 }

@@ -15,12 +15,13 @@ ArrayList<Present> presents;
 boolean clicked = false;
 
 void setup() {
-  size(868,620, P2D);
+  //size(868,620, P2D);
+  size(window.innerWidth, window.innerHeight, P2D);
   frameRate(32);
   
   bg = requestImage("data/bg2.png");
+  bg.resize(window.innerWidth, window.innerHeight);
   agentImage = requestImage("data/hat2.png");
-  agentImage.resize(24, 24);
   presentImage = requestImage("data/roundGiftBox.png");
   particleSprite = requestImage("data/sprite.png");
   
@@ -34,7 +35,8 @@ void setup() {
 }
 
 void draw() {
-  background(bg);
+  //background(bg);
+  image(bg, 0, 0);
 
   for (Individual v : individuals) {
     v.applyBehaviors(individuals);

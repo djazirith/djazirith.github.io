@@ -61,8 +61,8 @@ void draw() {
     p.display(); 
   }
   
-  ps.update();
-  ps.display();
+  //ps.update();
+  //ps.display();
   
   if (!clicked)
   {

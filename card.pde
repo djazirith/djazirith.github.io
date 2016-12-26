@@ -18,11 +18,11 @@ void setup() {
   size(868,620, P2D);
   frameRate(32);
   
-  bg = requestImage("bg2.png");
-  agentImage = requestImage("hat2.png");
+  bg = requestImage("data/bg2.png");
+  agentImage = requestImage("data/hat2.png");
   agentImage.resize(24, 24);
-  presentImage = requestImage("roundGiftBox.png");
-  particleSprite = requestImage("sprite.png");
+  presentImage = requestImage("data/roundGiftBox.png");
+  particleSprite = requestImage("data/sprite.png");
   
   ps = new ParticleSystem(12);
   

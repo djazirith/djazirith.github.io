@@ -148,9 +148,8 @@ class Individual
 
   void display() {
     pushMatrix();
-    translate(position.x - r/2, position.y - r/2);
     rotate(velocity.heading() + PI/2);
-    image(agentImage,0,0);
+    image(agentImage, position.x - r/2, position.y - r/2);
     popMatrix();
   }
 

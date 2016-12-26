@@ -19,7 +19,7 @@ boolean mobile = false;
 void setup() {
   frameRate(32);
   
-  bg = loadImage("data/bg2.png");
+  bg = requestImage("data/bg2.png");
   if (window.innerWidth > 868 || window.innerHeight > 620) {
     size(868,620, P2D);
   } else {

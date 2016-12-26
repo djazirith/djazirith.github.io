@@ -22,7 +22,6 @@ void setup() {
     size(868,620, P2D);
   } else {
     size(window.innerWidth, window.innerHeight, P2D);
-	bg.resize(window.innerWidth, window.innerHeight);
   }
   
   agentImage = requestImage("data/hat2.png");
@@ -39,7 +38,8 @@ void setup() {
 }
 
 void draw() {
-  background(bg);
+  bg.resize(window.innerWidth, window.innerHeight);
+  image(bg, 0, 0);
   
   for (Individual v : individuals) {
     v.applyBehaviors(individuals);

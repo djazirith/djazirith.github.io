@@ -44,8 +44,10 @@ void draw() {
   if (mobile) {
     bg.resize(window.innerWidth - 15, window.innerHeight - 15);
 	agentImage.resize(24, 24);
+	image(bg, 0, 0);
+  } else {
+	background(bg);
   }
-  background(bg);
   
   for (Individual v : individuals) {
     v.applyBehaviors(individuals);

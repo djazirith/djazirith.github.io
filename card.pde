@@ -1,7 +1,7 @@
-/* @pjs preload="sprite.png" */
-/* @pjs preload="bg2.png" */
-/* @pjs preload="hat2.png" */
-/* @pjs preload="roundGiftBox.png" */
+/* @pjs preload="sprite.png"; */
+/* @pjs preload="bg2.png"; */
+/* @pjs preload="hat2.png"; */
+/* @pjs preload="roundGiftBox.png"; */
 
 // Based on examples from "The Nature of Code" by Daniel Shiffman
 // http://natureofcode.com

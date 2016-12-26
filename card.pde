@@ -17,14 +17,13 @@ boolean clicked = false;
 void setup() {
   frameRate(32);
   
-  PImage bg = loadImage("data/bg2.png");
+  bg = loadImage("data/bg2.png");
   if (window.innerWidth > 868 || window.innerHeight > 620) {
     size(868,620, P2D);
   } else {
     size(window.innerWidth, window.innerHeight, P2D);
 	bg.resize(window.innerWidth, window.innerHeight);
   }
-  background(bg);
   
   agentImage = requestImage("data/hat2.png");
   presentImage = requestImage("data/roundGiftBox.png");
@@ -40,6 +39,8 @@ void setup() {
 }
 
 void draw() {
+  background(bg);
+  
   for (Individual v : individuals) {
     v.applyBehaviors(individuals);
     v.update();

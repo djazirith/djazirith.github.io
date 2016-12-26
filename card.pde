@@ -14,6 +14,8 @@ ArrayList<Present> presents;
 
 boolean clicked = false;
 
+boolean mobile = false;
+
 void setup() {
   frameRate(32);
   
@@ -21,7 +23,8 @@ void setup() {
   if (window.innerWidth > 868 || window.innerHeight > 620) {
     size(868,620, P2D);
   } else {
-    size(window.innerWidth, window.innerHeight, P2D);
+    size(window.innerWidth - 30, window.innerHeight - 30, P2D);
+	mobile = true;
   }
   
   agentImage = requestImage("data/hat2.png");
@@ -38,8 +41,11 @@ void setup() {
 }
 
 void draw() {
-  bg.resize(window.innerWidth, window.innerHeight);
-  image(bg, 0, 0);
+  if (mobile) {
+    bg.resize(window.innerWidth, window.innerHeight);
+	agentImage.resize(24, 24);
+  }
+  background(bg);
   
   for (Individual v : individuals) {
     v.applyBehaviors(individuals);

@@ -1,5 +1,5 @@
-/* @pjs preload="data/sprite.png"; */
 /* @pjs preload="data/bg2.png"; */
+/* @pjs preload="data/sprite.png"; */
 /* @pjs preload="data/hat2.png"; */
 /* @pjs preload="data/roundGiftBox.png"; */
 

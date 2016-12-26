@@ -51,7 +51,7 @@ class Particle {
   }
   
   void display() {
-    tint(color(228,0,124,lifespan*lifespan));
+    tint(color(228,0,124));
     image(particleSprite, px, py, partSize, partSize);
     noTint();
   }

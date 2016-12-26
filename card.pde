@@ -68,7 +68,11 @@ void draw() {
   {
     fill(32);
     textSize(18);
-    text("Drop down presents by clicking any mouse button or touching the screen.", 10, height-16);
+	if (mobile) {
+	  text("Drop down presents by touching the screen.", 10, height-16);
+	} else {
+	  text("Drop down presents by clicking any mouse button.", 10, height-16);
+	}
   }
 }
 

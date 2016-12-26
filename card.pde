@@ -15,13 +15,12 @@ ArrayList<Present> presents;
 boolean clicked = false;
 
 void setup() {
-  //size(868,620, P2D);
-  size(window.innerWidth, window.innerHeight, P2D);
+  size(868,620, P2D);
   frameRate(32);
   
   bg = requestImage("bg2.png");
-  bg.resize(window.innerWidth, window.innerHeight);
   agentImage = requestImage("hat2.png");
+  agentImage.resize(24, 24);
   presentImage = requestImage("roundGiftBox.png");
   particleSprite = requestImage("sprite.png");
   

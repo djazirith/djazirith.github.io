@@ -13,7 +13,7 @@ class Individual
 
   Individual(float x, float y) {
     position = new PVector(x, y);
-    r = 50;
+    r = 24;
     maxspeed = 8;
     maxforce = 0.2;
     acceleration = new PVector(0, 0);

@@ -11,9 +11,9 @@ class Individual
 
   long patience = 500; //milliseconds
 
-  Individual(float x, float y) {
+  Individual(float x, float y, float radius) {
     position = new PVector(x, y);
-    r = 24;
+    r = radius;
     maxspeed = 8;
     maxforce = 0.2;
     acceleration = new PVector(0, 0);

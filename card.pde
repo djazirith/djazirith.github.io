@@ -33,10 +33,18 @@ void setup() {
   
   ps = new ParticleSystem(12);
   
-  individuals = new ArrayList<Individual>();
   presents = new ArrayList<Present>();
+  
+  float radius;
+  if (mobile) {
+    radius = 24;
+  } else {
+    radius = 50;
+  }
+  
+  individuals = new ArrayList<Individual>();
   for (int i = 0; i < 14; i++) {
-    individuals.add(new Individual(random(width),random(height)));
+    individuals.add(new Individual(random(width),random(height), radius));
   }
 }
 

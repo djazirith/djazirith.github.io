@@ -1,7 +1,4 @@
-/* @pjs preload="data/bg2.png"; */
-/* @pjs preload="data/sprite.png"; */
-/* @pjs preload="data/hat2.png"; */
-/* @pjs preload="data/roundGiftBox.png"; */
+/* @pjs preload="data/bg2.png,data/sprite.png,data/hat2.png,data/roundGiftBox.png"; */
 
 // Based on examples from "The Nature of Code" by Daniel Shiffman
 // http://natureofcode.com
@@ -19,7 +16,7 @@ boolean mobile = false;
 void setup() {
   frameRate(32);
   
-  bg = requestImage("data/bg2.png");
+  bg = loadImage("data/bg2.png");
   if (window.innerWidth > 868 || window.innerHeight > 620) {
     size(868,620, P2D);
   } else {
@@ -27,9 +24,9 @@ void setup() {
 	mobile = true;
   }
   
-  agentImage = requestImage("data/hat2.png");
-  presentImage = requestImage("data/roundGiftBox.png");
-  particleSprite = requestImage("data/sprite.png");
+  agentImage = loadImage("data/hat2.png");
+  presentImage = loadImage("data/roundGiftBox.png");
+  particleSprite = loadImage("data/sprite.png");
   
   ps = new ParticleSystem(12);
   

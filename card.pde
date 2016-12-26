@@ -7,7 +7,7 @@
 // http://natureofcode.com
 
 ParticleSystem ps;
-PImage bg, agentImage, presentImage, particleSprite;
+PImage agentImage, presentImage, particleSprite;
 
 ArrayList<Individual> individuals;
 ArrayList<Present> presents;
@@ -17,7 +17,7 @@ boolean clicked = false;
 void setup() {
   frameRate(32);
   
-  bg = loadImage("data/bg2.png");
+  PImage bg = loadImage("data/bg2.png");
   if (window.innerWidth > 868 || window.innerHeight > 620) {
     size(868,620, P2D);
   } else {
